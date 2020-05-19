@@ -20,7 +20,7 @@
 	
 	<header class="page-header header conatainer-fluid">
 		<div class="overlay"></div>
-		<div class="descriptionContactus"> 
+		<div class="descriptionAboutus"> 
 			<h1>About Our Library</h1>
 			<p>Hello!!! Welcome to our Library. We are happy that you are interested in our book collection.
 			 Welcome to our Library. We are happy that you are interested in our book collection.
