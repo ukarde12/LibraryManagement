@@ -54,7 +54,7 @@ body {
 	position: absolute;
 	top: 215px;
 	text-align: center;
-	transform: translate(-50%, -55%)
+	transform: translate(-50%, -55%);
 }
 
 .description p {
@@ -93,17 +93,39 @@ body {
 .features img {
 	margin-bottom: 16px;
 }
-
-.page-footer {
-	background-color: #222;
-	color: #ccc;
-	padding: 60px 0 30px;
-}
-.footer-copyright{
-	color:#666;
-	padding:40px 0;
-}
 .navbar h2{
 	font-weight: bold;
 	font-family: Impact, Charcoal, sans-serif;
+}
+
+.page-footer{
+	background-color: #222;
+	color:#ccc;
+	padding-top: 60px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+}
+.footer-copyright{
+	color: #666;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+.form-container{
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px #000;
+	position: absolute;
+	top: 15vh;
+}
+.descriptionContactus {
+	left: 50%;
+	position: relative;
+	top: 215px;
+	text-align: left;
+	transform: translate(-50%, -55%);
+	padding: 25px;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
 }
