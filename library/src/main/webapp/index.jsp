@@ -19,9 +19,12 @@
 		<div class="description">
 			<h1>Welcome to our Library</h1>
 			<p>Hello!!! You will get various collections of books. You are
-				just one <b>click</b> away from your favourite books. So click on login &
+				just one <b>click</b> away from your favourite books. So click on login and
 				enjoy reading.</p>
-			<button class="btn btn-outline-secondary btn-lg">Login</button>
+				<form method="GET" action="login.jsp">
+<!-- 				<input type="submit" class="btn btn-outline-secondary btn-lg" value="login"> -->
+ 			<button class="btn btn-outline-secondary btn-lg" onClick="location.href='/login'">Login</button> 
+			</form>
 		</div>
 	</header>
 

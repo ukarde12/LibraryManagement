@@ -14,7 +14,6 @@
 	<script
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
-
 	<nav class="navbar navbar-expand-md"> <jsp:include
 		page="jsp/navigationbar.jsp"></jsp:include> </nav>
 
@@ -35,18 +34,10 @@
 				name="password">
 		</div>
 		<div class="form-group">
-			<label for="role">Role:</label> <select class="form-control"
-				id="role">
-				<option>Buyer</option>
-				<option>Head</option>
-				<option>Assistant</option>
-			</select>
-		</div>
-		<div class="form-group">
 		<button type="submit" class="btn btn-primary btn-block">Login</button>
 		</div>
 		<div class="">
-		Don't have an account? <a href="#"> Sign Up</a>
+		Don't have an account? <a onclick="location.href='/registration'" href="/registration"> Sign Up</a>
 		</div>		
 			<div class="d-flex justify-content-center links">
             <a href="#">Forgot your password?</a>
