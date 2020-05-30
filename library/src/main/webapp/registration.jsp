@@ -33,7 +33,7 @@
 		<div class="form-group col-md-6">
 			<label for="firstname">First Name:</label> 
 			<input type="text" class="form-control" id="text" placeholder="Enter first name"
-				name="firstname">
+				name="firstname" required>
 				<form:errors path="firstname" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>
@@ -41,7 +41,7 @@
 		<div class="form-group col-md-6">
 			<label for="lastname">Last Name:</label> <input type="text"
 				class="form-control" id="text" placeholder="Enter last name"
-				name="lastname">
+				name="lastname" required>
 				<form:errors path="lastname" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>
@@ -50,7 +50,7 @@
 		<div class="form-group">
 			<label for="email">Email Address:</label> <input type="email"
 				class="form-control" id="text" placeholder="Enter email"
-				name="email">
+				name="email" required>
 				<form:errors path="email" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>
@@ -58,7 +58,7 @@
 		<div class="form-group">
 			<label for="password">Password:</label> <input type="password"
 				class="form-control" id="password" placeholder="Enter password"
-				name="password">
+				name="password" required>
 				<form:errors path="password" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>
@@ -66,7 +66,7 @@
 		<div class="form-group">
 			<label for="confirmpassword">Confirm Password:</label> <input type="password"
 				class="form-control" id="confirmpassword" placeholder="Enter confirm password"
-				name="confirmpassword">
+				name="confirmpassword" required>
 				<form:errors path="confirmpassword" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>
@@ -74,7 +74,7 @@
 		<div class="form-group">
 			<label for="contactno">Contact no:</label> <input type="text"
 				class="form-control" id="contactno" placeholder="Enter contact number"
-				name="contactno">
+				name="contactno" required>
 			<form:errors path="contactno" cssStyle="color: #ff0000;"></form:errors>
 		</div>
 		</spring:bind>

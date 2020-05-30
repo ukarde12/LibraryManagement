@@ -133,3 +133,6 @@ body {
 .has-error{
 	color:red;
 }
+.input:invalid{
+	border: 2px soild red;
+}

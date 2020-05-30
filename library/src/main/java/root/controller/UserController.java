@@ -48,7 +48,6 @@ public class UserController {
 		
 	}	
 	
-	
     @GetMapping("/registration")
     public String registration(Model model) {
         model.addAttribute("userForm", new User());
@@ -60,9 +59,42 @@ public class UserController {
         return "index";
     }
 	
-	@RequestMapping("/login")
+	@GetMapping("/login")
 	public String loginPage(){
 		System.out.println("inside login jsp");
 		return "login";
 	}
+	
+	@GetMapping("/AboutUs")
+	public String aboutPageRedirection(){
+		return "AboutUs";
+	}
+	
+	@GetMapping("/contactUs")
+	public String contactPageRedirection(){
+		return "contactUs";
+	}
+	
+	@GetMapping("/userDashboard")
+	public String userDashboardPageRedirection(Model model,String error,String logout){
+		if(error !=null){
+			System.out.println("inside userDashboard");
+			model.addAttribute("error", "Your username & password is invalid");
+
+	        if (logout != null)
+	            model.addAttribute("message", "You have been logged out successfully.");
+
+	        return "login";
+		}
+		
+		return "userDashboard";
+	}
+	
+	@GetMapping("/faliureLogin")
+	public String faliureLoginPageRedirection(Model model,String error,String logout){
+			System.out.println("inside userDashboard");
+			model.addAttribute("error", "Your username or password is invalid");
+	        return "login";
+	}
 }
+

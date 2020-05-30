@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,28 +24,29 @@
 	 <section class="container-fluid"> 
 	 <section class="row justify-content-center"> 
 	 <section class="col-12 col-sm-6 col-md-3">
-	<form class="form-container">
+	<form:form class="form-container" method="POST" action="/login">
 	<h1>LOGIN</h1>
-		<div class="form-group">
+	<div class="form-error ${error != null ? 'has-error':''}">
+		<div class="form-group ">
 			<label for="email">Email:</label> <input type="email"
 				class="form-control" id="email" placeholder="Enter email"
-				name="email">
+				name="email" required>
 		</div>
 		<div class="form-group">
 			<label for="password">Password:</label> <input type="password"
-				class="form-control" id="email" placeholder="Enter password"
-				name="password">
+				class="form-control" id="password" placeholder="Enter password"
+				name="password" required>
+		</div>
+		<span>${error}</span>
 		</div>
 		<div class="form-group">
 		<button type="submit" class="btn btn-primary btn-block">Login</button>
 		</div>
-		<div class="">
 		Don't have an account? <a onclick="location.href='/registration'" href="/registration"> Sign Up</a>
-		</div>		
 			<div class="d-flex justify-content-center links">
             <a href="#">Forgot your password?</a>
             </div>
-	</form>
+	</form:form>
 	</section> 
 	</section> 
 	</section> 

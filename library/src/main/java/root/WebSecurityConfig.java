@@ -28,16 +28,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception {
 		System.out.println("inside web security");
 		http
-		.csrf().disable()
 		.authorizeRequests().antMatchers("/index").permitAll()
-		.antMatchers("/login").permitAll()
-		.antMatchers("/registration").permitAll()		
+		.antMatchers("/AboutUs").permitAll()
+		.antMatchers("/contactUs").permitAll()
+		.antMatchers("/registration").permitAll()
+		.antMatchers("/login").permitAll()	
 		.antMatchers("/", "/home", "/js/**", "/css/**").permitAll() 
 		.anyRequest().authenticated()
 		.and()
 		.formLogin()
 		.loginPage("/login")
+		.loginProcessingUrl("/login")
+		.usernameParameter("email")
+		.passwordParameter("password")
+		.defaultSuccessUrl("/userDashboard")
+		.failureUrl("/faliureLogin")
+		.permitAll()
+		.and()
+		.logout()
 		.permitAll();
+		http.csrf().disable();
 	}
 
 	@Bean
