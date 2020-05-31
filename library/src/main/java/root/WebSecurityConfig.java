@@ -29,8 +29,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		System.out.println("inside web security");
 		http
 		.authorizeRequests().antMatchers("/index").permitAll()
-		.antMatchers("/AboutUs").permitAll()
-		.antMatchers("/contactUs").permitAll()
 		.antMatchers("/registration").permitAll()
 		.antMatchers("/login").permitAll()	
 		.antMatchers("/", "/home", "/js/**", "/css/**").permitAll() 

@@ -19,8 +19,20 @@
 	</nav>
 	
 	<header class="page-header header conatainer-fluid">
+	<form id="logoutForm" method="POST" action="/logout">
+	  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+	</form>
+	
 		<div class="overlay"></div>
 		<div class="descriptionAboutus"> 
+		<div class ="logoutText" style="display:flex; flex-direction: row; justify-content: space-between; align-items: right">
+		<h1></h1>
+		<div class="form-logout">
+	  	<div class="form-group">
+		<button type="submit" id="logoutBtn"class="btn btn-primary btn-block" onclick="document.forms['logoutForm'].submit()">Logout</button>
+	</div>
+	</div>
+	</div>
 			<h1>About Our Library</h1>
 			<p>Hello!!! Welcome to our Library. We are happy that you are interested in our book collection.
 			 Welcome to our Library. We are happy that you are interested in our book collection.
@@ -29,6 +41,7 @@
 			   Welcome to our Library. We are happy that you are interested in our book collection.
 			</p>
 		</div>
+		
 	</header>
 	
 	<div class="container features">

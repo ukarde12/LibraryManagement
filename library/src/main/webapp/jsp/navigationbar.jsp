@@ -20,6 +20,7 @@
 		<div class="collapse navbar-collapse" id="main-navigation"
 			align="center">
 			<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="/userDashboard" onClick="location.href='/userDashboard'">My Dashboard</a></li>
 				<li class="nav-item"><a class="nav-link" href="/index" onClick="location.href='/index'">Home</a></li>
 				<li class="nav-item"><a class="nav-link"  href="/AboutUs" onClick="location.href='/AboutUs'">About Us</a></li>
 				<li class="nav-item"><a class="nav-link" href="/contactUs" onClick="location.href='/contactUs'">Contact Us</a></li>

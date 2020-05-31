@@ -121,10 +121,10 @@ body {
 .descriptionAboutus {
 	left: 50%;
 	position: relative;
-	top: 215px;
+	top: 150px;
 	text-align: left;
 	transform: translate(-50%, -55%);
-	padding: 25px;
+	padding: 10px;
 	color: #fff;
 	font-size: 25px;
 	font-weight: bold;
@@ -132,3 +132,4 @@ body {
 .has-error {
     color: red
 }
+
